@@ -2,13 +2,22 @@
 // Beneficios.astro
 ---
 
-<section id="beneficios" class="py-16 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section id="beneficios" class="py-20 relative overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <div class="circuit-pattern absolute inset-0 opacity-10"></div>
+  </div>
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="text-center">
-      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+      <div class="inline-flex items-center justify-center mb-3">
+        <div class="h-px w-8 bg-cyber-purple mr-3"></div>
+        <span class="text-cyber-purple uppercase text-sm tracking-wider font-medium">Por qué elegirnos</span>
+        <div class="h-px w-8 bg-cyber-purple ml-3"></div>
+      </div>
+      <h2 class="text-3xl font-extrabold text-white sm:text-4xl neon-text">
         Beneficios de Nuestros Servicios
       </h2>
-      <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+      <p class="mt-4 max-w-2xl mx-auto text-xl text-cyber-text/80">
         Descubre cómo nuestras soluciones pueden transformar la seguridad y eficiencia de tu organización
       </p>
     </div>
@@ -16,79 +25,97 @@
     <div class="mt-16">
       <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
         <!-- Beneficio 1 -->
-        <div class="flex">
-          <div class="flex-shrink-0">
-            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-600 text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-              </svg>
+        <div class="cyber-card group p-6 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyber-blue via-cyber-green to-cyber-blue"></div>
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md border border-cyber-blue/30 bg-cyber-dark/80 text-cyber-blue group-hover:text-cyber-green transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="ml-4">
-            <h3 class="text-lg font-medium text-gray-900">Protección Proactiva</h3>
-            <p class="mt-2 text-base text-gray-500">
-              Identificamos vulnerabilidades antes que los atacantes, permitiéndote corregir problemas antes de que sean explotados.
-            </p>
+            <div class="ml-4">
+              <h3 class="text-lg font-medium text-cyber-blue">Protección Proactiva</h3>
+              <p class="mt-2 text-base text-cyber-text/80">
+                Identificamos vulnerabilidades antes que los atacantes, permitiéndote corregir problemas antes de que sean explotados.
+              </p>
+            </div>
           </div>
         </div>
 
         <!-- Beneficio 2 -->
-        <div class="flex">
-          <div class="flex-shrink-0">
-            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-600 text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-              </svg>
+        <div class="cyber-card group p-6 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyber-purple via-cyber-blue to-cyber-purple"></div>
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md border border-cyber-purple/30 bg-cyber-dark/80 text-cyber-purple group-hover:text-cyber-blue transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="ml-4">
-            <h3 class="text-lg font-medium text-gray-900">Eficiencia Operativa</h3>
-            <p class="mt-2 text-base text-gray-500">
-              Nuestras soluciones de automatización con IA optimizan procesos, reducen costos y mejoran la productividad.
-            </p>
+            <div class="ml-4">
+              <h3 class="text-lg font-medium text-cyber-purple">Eficiencia Operativa</h3>
+              <p class="mt-2 text-base text-cyber-text/80">
+                Nuestras soluciones de automatización con IA optimizan procesos, reducen costos y mejoran la productividad.
+              </p>
+            </div>
           </div>
         </div>
 
         <!-- Beneficio 3 -->
-        <div class="flex">
-          <div class="flex-shrink-0">
-            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-600 text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+        <div class="cyber-card group p-6 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyber-green via-cyber-blue to-cyber-green"></div>
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md border border-cyber-green/30 bg-cyber-dark/80 text-cyber-green group-hover:text-cyber-blue transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="ml-4">
-            <h3 class="text-lg font-medium text-gray-900">Cumplimiento Normativo</h3>
-            <p class="mt-2 text-base text-gray-500">
-              Te ayudamos a cumplir con regulaciones de seguridad y protección de datos, evitando sanciones y protegiendo tu reputación.
-            </p>
+            <div class="ml-4">
+              <h3 class="text-lg font-medium text-cyber-green">Cumplimiento Normativo</h3>
+              <p class="mt-2 text-base text-cyber-text/80">
+                Te ayudamos a cumplir con regulaciones de seguridad y protección de datos, evitando sanciones y protegiendo tu reputación.
+              </p>
+            </div>
           </div>
         </div>
 
         <!-- Beneficio 4 -->
-        <div class="flex">
-          <div class="flex-shrink-0">
-            <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-600 text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-              </svg>
+        <div class="cyber-card group p-6 relative overflow-hidden">
+          <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyber-red via-cyber-purple to-cyber-red"></div>
+          <div class="flex">
+            <div class="flex-shrink-0">
+              <div class="flex items-center justify-center h-12 w-12 rounded-md border border-cyber-red/30 bg-cyber-dark/80 text-cyber-red group-hover:text-cyber-blue transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="ml-4">
-            <h3 class="text-lg font-medium text-gray-900">Experiencia Especializada</h3>
-            <p class="mt-2 text-base text-gray-500">
-              Nuestro equipo combina conocimientos avanzados en ciberseguridad con experiencia en inteligencia artificial y automatización.
-            </p>
+            <div class="ml-4">
+              <h3 class="text-lg font-medium text-cyber-red">Experiencia Especializada</h3>
+              <p class="mt-2 text-base text-cyber-text/80">
+                Nuestro equipo combina conocimientos avanzados en ciberseguridad con experiencia en inteligencia artificial y automatización.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="mt-12 text-center">
-        <a href="/contacto" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+        <a href="/contacto" class="gradient-btn inline-flex items-center justify-center px-6 py-3 text-base font-medium">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z" clip-rule="evenodd" />
+          </svg>
           Solicita una Evaluación Gratuita
         </a>
       </div>
     </div>
+    
+    <!-- Decorative elements -->
+    <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-cyber-blue/50 to-transparent"></div>
   </div>
 </section> 

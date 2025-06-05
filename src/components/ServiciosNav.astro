@@ -3,27 +3,61 @@
 const { servicioActivo } = Astro.props;
 ---
 
-<div class="bg-gray-100 py-4 border-b border-gray-200">
+<div class="bg-cyber-dark py-4 border-b border-cyber-blue/30 backdrop-blur-sm cyber-nav-container">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <nav class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-8">
       <a 
         href="/servicios/pentesting" 
-        class={`px-3 py-2 text-sm font-medium rounded-md ${servicioActivo === 'pentesting' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-200'}`}
+        class={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 cyber-button ${servicioActivo === 'pentesting' ? 'active-cyber-nav' : 'inactive-cyber-nav'}`}
       >
         Pentesting Profesional
       </a>
       <a 
         href="/servicios/automatizacion-ia" 
-        class={`px-3 py-2 text-sm font-medium rounded-md ${servicioActivo === 'automatizacion-ia' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-200'}`}
+        class={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 cyber-button ${servicioActivo === 'automatizacion-ia' ? 'active-cyber-nav' : 'inactive-cyber-nav'}`}
       >
         Automatización con IA
       </a>
       <a 
         href="/servicios/consultoria" 
-        class={`px-3 py-2 text-sm font-medium rounded-md ${servicioActivo === 'consultoria' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-200'}`}
+        class={`px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 cyber-button ${servicioActivo === 'consultoria' ? 'active-cyber-nav' : 'inactive-cyber-nav'}`}
       >
         Consultoría en Ciberseguridad
       </a>
     </nav>
   </div>
-</div> 
+</div>
+
+<style>
+  .cyber-nav-container {
+    position: relative;
+    z-index: 10;
+    box-shadow: 0 0 15px rgba(0, 180, 216, 0.2);
+  }
+  
+  .cyber-button {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid transparent;
+  }
+  
+  .active-cyber-nav {
+    background: linear-gradient(135deg, rgba(0, 180, 216, 0.2), rgba(0, 255, 157, 0.1));
+    color: var(--color-cyber-green);
+    border: 1px solid var(--color-cyber-blue);
+    box-shadow: 0 0 10px rgba(0, 180, 216, 0.3), inset 0 0 5px rgba(0, 180, 216, 0.2);
+    text-shadow: 0 0 5px rgba(0, 255, 157, 0.5);
+  }
+  
+  .inactive-cyber-nav {
+    color: var(--color-cyber-text);
+    border: 1px solid rgba(0, 180, 216, 0.3);
+  }
+  
+  .inactive-cyber-nav:hover {
+    background: rgba(0, 180, 216, 0.1);
+    border-color: var(--color-cyber-blue);
+    box-shadow: 0 0 8px rgba(0, 180, 216, 0.2);
+    transform: translateY(-1px);
+  }
+</style> 

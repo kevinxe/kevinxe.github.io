@@ -9,13 +9,14 @@ import ServiciosNav from '../../components/ServiciosNav.astro';
   <Navbar />
   <main class="pt-24">
     <!-- Hero de servicio -->
-    <div class="bg-gradient-to-r from-indigo-900 to-indigo-700 text-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-        <div class="text-center">
-          <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
-            Consultoría en Ciberseguridad
+    <div class="cyber-gradient text-cyber-text">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 relative overflow-hidden">
+        <div class="cyber-grid-overlay"></div>
+        <div class="text-center relative z-10">
+          <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl cyber-glitch-text">
+            <span data-text="Consultoría en Ciberseguridad">Consultoría en Ciberseguridad</span>
           </h1>
-          <p class="mt-6 max-w-3xl mx-auto text-xl text-indigo-100">
+          <p class="mt-6 max-w-3xl mx-auto text-xl text-cyber-text cyber-text-glow">
             Asesoramiento especializado para ayudar a su organización a desarrollar estrategias sólidas de protección digital.
           </p>
         </div>
@@ -26,8 +27,8 @@ import ServiciosNav from '../../components/ServiciosNav.astro';
 
     <!-- Descripción detallada -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div class="prose prose-indigo prose-lg mx-auto">
-        <h2>Asesoramiento Estratégico en Ciberseguridad</h2>
+      <div class="cyber-prose mx-auto">
+        <h2 class="cyber-heading">Asesoramiento Estratégico en Ciberseguridad</h2>
         <p>
           En SecureAI, ofrecemos servicios de consultoría en ciberseguridad diseñados para ayudar a las organizaciones a navegar por el complejo panorama de amenazas digitales actuales. Nuestro equipo de consultores expertos trabaja estrechamente con usted para comprender sus necesidades específicas y desarrollar estrategias personalizadas que protejan sus activos digitales más valiosos.
         </p>
@@ -36,9 +37,9 @@ import ServiciosNav from '../../components/ServiciosNav.astro';
           Con años de experiencia en la industria y un profundo conocimiento de las últimas tendencias y amenazas en ciberseguridad, nuestros consultores proporcionan orientación práctica y accionable para fortalecer su postura de seguridad y mitigar riesgos.
         </p>
         
-        <div class="my-12 bg-gray-50 p-6 rounded-lg border border-gray-200">
-          <h3 class="text-xl font-bold text-indigo-700">¿Por qué elegir nuestra consultoría?</h3>
-          <ul class="mt-4">
+        <div class="cyber-card my-12">
+          <h3 class="text-xl font-bold text-cyber-green">¿Por qué elegir nuestra consultoría?</h3>
+          <ul class="cyber-list mt-4">
             <li><strong>Enfoque personalizado:</strong> Desarrollamos estrategias adaptadas específicamente a sus necesidades y desafíos únicos</li>
             <li><strong>Experiencia multidisciplinar:</strong> Nuestro equipo combina conocimientos en ciberseguridad, cumplimiento normativo, gestión de riesgos y tecnologías emergentes</li>
             <li><strong>Orientación práctica:</strong> Proporcionamos recomendaciones concretas y accionables, no solo informes teóricos</li>
@@ -47,13 +48,13 @@ import ServiciosNav from '../../components/ServiciosNav.astro';
           </ul>
         </div>
 
-        <h2>Nuestros Servicios de Consultoría</h2>
+        <h2 class="cyber-heading">Nuestros Servicios de Consultoría</h2>
         
-        <h3 class="text-xl font-bold mt-8">1. Evaluación de Riesgos y Análisis de Brechas</h3>
+        <h3 class="text-xl font-bold mt-8 text-cyber-blue">1. Evaluación de Riesgos y Análisis de Brechas</h3>
         <p>
           Realizamos una evaluación exhaustiva de su entorno de seguridad actual para identificar vulnerabilidades, evaluar riesgos y determinar brechas en relación con las mejores prácticas de la industria y los requisitos normativos aplicables.
         </p>
-        <ul>
+        <ul class="cyber-list">
           <li>Identificación y clasificación de activos de información críticos</li>
           <li>Evaluación de amenazas y vulnerabilidades</li>
           <li>Análisis de impacto en el negocio</li>
@@ -61,11 +62,11 @@ import ServiciosNav from '../../components/ServiciosNav.astro';
           <li>Identificación de brechas y recomendaciones de mejora</li>
         </ul>
 
-        <h3 class="text-xl font-bold mt-8">2. Desarrollo de Estrategia y Arquitectura de Seguridad</h3>
+        <h3 class="text-xl font-bold mt-8 text-cyber-blue">2. Desarrollo de Estrategia y Arquitectura de Seguridad</h3>
         <p>
           Diseñamos estrategias y arquitecturas de seguridad integrales que se alinean con sus objetivos de negocio, requisitos de cumplimiento y tolerancia al riesgo, proporcionando un marco claro para la implementación de controles de seguridad efectivos.
         </p>
-        <ul>
+        <ul class="cyber-list">
           <li>Definición de objetivos y principios de seguridad</li>
           <li>Diseño de arquitectura de seguridad empresarial</li>
           <li>Desarrollo de hoja de ruta de seguridad</li>
@@ -73,11 +74,11 @@ import ServiciosNav from '../../components/ServiciosNav.astro';
           <li>Definición de métricas y KPIs de seguridad</li>
         </ul>
 
-        <h3 class="text-xl font-bold mt-8">3. Desarrollo de Políticas y Procedimientos</h3>
+        <h3 class="text-xl font-bold mt-8 text-cyber-blue">3. Desarrollo de Políticas y Procedimientos</h3>
         <p>
           Creamos y revisamos políticas, estándares y procedimientos de seguridad que establecen un marco claro para la gestión de la seguridad de la información en su organización, alineados con las mejores prácticas de la industria y requisitos regulatorios.
         </p>
-        <ul>
+        <ul class="cyber-list">
           <li>Política general de seguridad de la información</li>
           <li>Políticas específicas (control de acceso, gestión de incidentes, etc.)</li>
           <li>Estándares técnicos y de configuración</li>
@@ -85,13 +86,13 @@ import ServiciosNav from '../../components/ServiciosNav.astro';
           <li>Guías y manuales para usuarios finales</li>
         </ul>
 
-        <h2 class="mt-12">Solicite una Consulta Inicial</h2>
+        <h2 class="mt-12 cyber-heading">Solicite una Consulta Inicial</h2>
         <p>
           Nuestro equipo de consultores expertos está listo para ayudarle a fortalecer la postura de seguridad de su organización. Contáctenos hoy para programar una consulta inicial gratuita y descubrir cómo podemos ayudarle a proteger sus activos digitales más valiosos.
         </p>
 
         <div class="mt-8">
-          <a href="/contacto" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+          <a href="/contacto" class="cyber-button-primary">
             Solicitar consulta inicial
           </a>
         </div>
@@ -99,4 +100,188 @@ import ServiciosNav from '../../components/ServiciosNav.astro';
     </div>
   </main>
   <Footer />
-</Layout> 
+</Layout>
+
+<style>
+  .cyber-gradient {
+    background: linear-gradient(135deg, var(--color-cyber-dark-blue), var(--color-cyber-dark));
+    position: relative;
+  }
+  
+  .cyber-grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 180, 216, 0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(0, 180, 216, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: 1;
+  }
+  
+  .cyber-glitch-text {
+    position: relative;
+    color: var(--color-cyber-blue);
+    text-shadow: 0 0 10px var(--color-cyber-blue), 0 0 20px rgba(0, 180, 216, 0.5);
+  }
+  
+  .cyber-glitch-text span {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cyber-glitch-text span::before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: 2px 0 var(--color-cyber-green);
+    top: 0;
+    color: var(--color-cyber-blue);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: cyber-noise-1 3s infinite linear alternate-reverse;
+  }
+  
+  .cyber-glitch-text span::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -2px 0 var(--color-cyber-red);
+    top: 0;
+    color: var(--color-cyber-blue);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: cyber-noise-2 2s infinite linear alternate-reverse;
+  }
+  
+  @keyframes cyber-noise-1 {
+    0%, 3%, 5%, 42%, 44%, 100% {clip-rect: rect(0, 900px, 0, 0); opacity: 1;}
+    1%, 4%, 43% {clip-rect: rect(0, 900px, 0.5em, 0); opacity: 0.8;}
+  }
+  
+  @keyframes cyber-noise-2 {
+    0%, 5%, 10%, 15%, 20%, 25%, 30%, 35%, 40%, 45%, 50%, 55%, 60%, 70%, 80%, 85%, 90%, 95%, 100% {clip: rect(0, 900px, 0, 0);}
+    2%, 7%, 12%, 17%, 22%, 27%, 32%, 37%, 42%, 47%, 52%, 57%, 62%, 67%, 72%, 77%, 82%, 87%, 92%, 97% {clip: rect(0, 900px, 0.2em, 0);}
+  }
+  
+  .cyber-text-glow {
+    text-shadow: 0 0 5px rgba(0, 180, 216, 0.7);
+  }
+  
+  .cyber-prose {
+    color: var(--color-cyber-text);
+    max-width: 65ch;
+  }
+  
+  .cyber-heading {
+    color: var(--color-cyber-blue);
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 5px rgba(0, 180, 216, 0.5);
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cyber-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-cyber-blue), transparent);
+  }
+  
+  .cyber-list {
+    list-style-type: none;
+    padding-left: 1.5rem;
+  }
+  
+  .cyber-list li {
+    position: relative;
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cyber-list li::before {
+    content: '>';
+    position: absolute;
+    left: -1rem;
+    color: var(--color-cyber-green);
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  .cyber-card {
+    background: rgba(0, 180, 216, 0.05);
+    border: 1px solid var(--color-cyber-blue);
+    border-radius: 0.375rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px rgba(0, 180, 216, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cyber-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-cyber-blue), var(--color-cyber-green));
+  }
+  
+  .cyber-button-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 0.375rem;
+    background: linear-gradient(135deg, var(--color-cyber-blue), var(--color-cyber-dark-blue));
+    color: white;
+    border: 1px solid var(--color-cyber-blue);
+    box-shadow: 0 0 10px rgba(0, 180, 216, 0.3), inset 0 0 5px rgba(0, 180, 216, 0.2);
+    text-shadow: 0 0 5px rgba(0, 255, 157, 0.5);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .cyber-button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 15px rgba(0, 180, 216, 0.5), inset 0 0 5px rgba(0, 180, 216, 0.3);
+  }
+  
+  .cyber-button-primary::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(45deg, var(--color-cyber-blue), var(--color-cyber-green), var(--color-cyber-blue));
+    z-index: -1;
+    animation: cyber-button-border 3s linear infinite;
+    background-size: 200% 200%;
+    filter: blur(8px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .cyber-button-primary:hover::before {
+    opacity: 1;
+  }
+  
+  @keyframes cyber-button-border {
+    0% {background-position: 0% 0%;}
+    50% {background-position: 100% 100%;}
+    100% {background-position: 0% 0%;}
+  }
+</style> 

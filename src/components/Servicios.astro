@@ -2,52 +2,62 @@
 // Servicios.astro
 ---
 
-<section id="servicios" class="py-16 bg-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section id="servicios" class="py-20 relative overflow-hidden">
+  <div class="absolute inset-0 z-0">
+    <div class="circuit-pattern absolute inset-0 opacity-10"></div>
+  </div>
+  
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
     <div class="text-center">
-      <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+      <div class="inline-flex items-center justify-center mb-3">
+        <div class="h-px w-8 bg-cyber-blue mr-3"></div>
+        <span class="text-cyber-blue uppercase text-sm tracking-wider font-medium">Soluciones avanzadas</span>
+        <div class="h-px w-8 bg-cyber-blue ml-3"></div>
+      </div>
+      <h2 class="text-3xl font-extrabold text-white sm:text-4xl neon-text">
         Nuestros Servicios
       </h2>
-      <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+      <p class="mt-4 max-w-2xl mx-auto text-xl text-cyber-text/80">
         Soluciones avanzadas de ciberseguridad y automatización con inteligencia artificial
       </p>
     </div>
 
     <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       <!-- Servicio 1: Pentesting -->
-      <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+      <div class="cyber-card group">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyber-blue via-cyber-green to-cyber-blue"></div>
         <div class="p-6">
-          <div class="inline-flex items-center justify-center p-2 bg-indigo-100 rounded-md text-indigo-600">
+          <div class="inline-flex items-center justify-center p-3 rounded-lg border border-cyber-blue/30 bg-cyber-dark/80 text-cyber-blue group-hover:text-cyber-green transition-colors duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
           </div>
-          <h3 class="mt-4 text-xl font-medium text-gray-900">Pentesting Profesional</h3>
-          <p class="mt-2 text-gray-600">
+          <h3 class="mt-4 text-xl font-medium text-cyber-blue">Pentesting Profesional</h3>
+          <p class="mt-2 text-cyber-text/80">
             Evaluaciones exhaustivas de seguridad para identificar vulnerabilidades en sistemas, aplicaciones web, redes y dispositivos móviles antes que los atacantes.
           </p>
-          <ul class="mt-4 space-y-2 text-sm text-gray-600">
+          <ul class="mt-4 space-y-3 text-sm text-cyber-text/70">
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-indigo-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-cyber-green mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              Pruebas de penetración en infraestructura
+              <span>Pruebas de penetración en infraestructura</span>
             </li>
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-indigo-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-cyber-green mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              Auditorías de seguridad en aplicaciones web
+              <span>Auditorías de seguridad en aplicaciones web</span>
             </li>
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-indigo-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-cyber-green mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              Evaluación de seguridad en dispositivos móviles
+              <span>Evaluación de seguridad en dispositivos móviles</span>
             </li>
           </ul>
           <div class="mt-6">
-            <a href="/servicios/pentesting" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+            <a href="/servicios/pentesting" class="inline-flex items-center justify-center px-4 py-2 border border-cyber-blue text-sm font-medium rounded-md text-cyber-blue hover:bg-cyber-blue/10 transition-all duration-300">
               Ver más detalles
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -58,39 +68,40 @@
       </div>
 
       <!-- Servicio 2: Automatización con IA -->
-      <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+      <div class="cyber-card group">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyber-purple via-cyber-blue to-cyber-purple"></div>
         <div class="p-6">
-          <div class="inline-flex items-center justify-center p-2 bg-indigo-100 rounded-md text-indigo-600">
+          <div class="inline-flex items-center justify-center p-3 rounded-lg border border-cyber-purple/30 bg-cyber-dark/80 text-cyber-purple group-hover:text-cyber-blue transition-colors duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
-          <h3 class="mt-4 text-xl font-medium text-gray-900">Automatización con IA</h3>
-          <p class="mt-2 text-gray-600">
+          <h3 class="mt-4 text-xl font-medium text-cyber-purple">Automatización con IA</h3>
+          <p class="mt-2 text-cyber-text/80">
             Implementación de soluciones de automatización impulsadas por inteligencia artificial para optimizar procesos y mejorar la eficiencia operativa.
           </p>
-          <ul class="mt-4 space-y-2 text-sm text-gray-600">
+          <ul class="mt-4 space-y-3 text-sm text-cyber-text/70">
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-indigo-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-cyber-blue mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              Automatización de procesos de seguridad
+              <span>Automatización de procesos de seguridad</span>
             </li>
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-indigo-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-cyber-blue mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              Detección de amenazas con machine learning
+              <span>Detección de amenazas con machine learning</span>
             </li>
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-indigo-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-cyber-blue mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              Análisis predictivo de vulnerabilidades
+              <span>Análisis predictivo de vulnerabilidades</span>
             </li>
           </ul>
           <div class="mt-6">
-            <a href="/servicios/automatizacion-ia" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+            <a href="/servicios/automatizacion-ia" class="inline-flex items-center justify-center px-4 py-2 border border-cyber-purple text-sm font-medium rounded-md text-cyber-purple hover:bg-cyber-purple/10 transition-all duration-300">
               Ver más detalles
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -101,39 +112,40 @@
       </div>
 
       <!-- Servicio 3: Consultoría en Ciberseguridad -->
-      <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+      <div class="cyber-card group">
+        <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyber-green via-cyber-blue to-cyber-green"></div>
         <div class="p-6">
-          <div class="inline-flex items-center justify-center p-2 bg-indigo-100 rounded-md text-indigo-600">
+          <div class="inline-flex items-center justify-center p-3 rounded-lg border border-cyber-green/30 bg-cyber-dark/80 text-cyber-green group-hover:text-cyber-blue transition-colors duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
-          <h3 class="mt-4 text-xl font-medium text-gray-900">Consultoría en Ciberseguridad</h3>
-          <p class="mt-2 text-gray-600">
+          <h3 class="mt-4 text-xl font-medium text-cyber-green">Consultoría en Ciberseguridad</h3>
+          <p class="mt-2 text-cyber-text/80">
             Asesoramiento especializado en ciberseguridad para ayudar a su organización a desarrollar estrategias sólidas de protección digital.
           </p>
-          <ul class="mt-4 space-y-2 text-sm text-gray-600">
+          <ul class="mt-4 space-y-3 text-sm text-cyber-text/70">
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-indigo-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-cyber-blue mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              Desarrollo de políticas de seguridad
+              <span>Desarrollo de políticas de seguridad</span>
             </li>
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-indigo-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-cyber-blue mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              Evaluación de riesgos y cumplimiento
+              <span>Evaluación de riesgos y cumplimiento</span>
             </li>
             <li class="flex items-start">
-              <svg class="h-5 w-5 text-indigo-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <svg class="h-5 w-5 text-cyber-blue mr-2 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
               </svg>
-              Capacitación en seguridad para equipos
+              <span>Capacitación en seguridad para equipos</span>
             </li>
           </ul>
           <div class="mt-6">
-            <a href="/servicios/consultoria" class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+            <a href="/servicios/consultoria" class="inline-flex items-center justify-center px-4 py-2 border border-cyber-green text-sm font-medium rounded-md text-cyber-green hover:bg-cyber-green/10 transition-all duration-300">
               Ver más detalles
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -143,5 +155,8 @@
         </div>
       </div>
     </div>
+    
+    <!-- Decorative elements -->
+    <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-cyber-blue/50 to-transparent"></div>
   </div>
 </section> 

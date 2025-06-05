@@ -8,56 +8,165 @@ import Footer from '../components/Footer.astro';
   <Navbar />
   <main class="pt-24">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <h1 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-8">
+      <h1 class="text-3xl font-extrabold text-cyber-blue sm:text-4xl mb-8 cyber-glitch-small">
         Política de Cookies
       </h1>
 
-      <div class="prose prose-indigo max-w-none">
-        <p class="text-lg text-gray-500 mb-6">Última actualización: {new Date().toLocaleDateString('es-ES', {year: 'numeric', month: 'long', day: 'numeric'})}</p>
+      <div class="cyber-prose max-w-none">
+        <p class="text-lg text-cyber-text mb-6">Última actualización: {new Date().toLocaleDateString('es-ES', {year: 'numeric', month: 'long', day: 'numeric'})}</p>
 
-        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">1. ¿Qué son las cookies?</h2>
+        <h2 class="text-2xl font-bold text-cyber-blue mt-8 mb-4 cyber-heading">1. ¿Qué son las cookies?</h2>
         <p class="mb-4">Una cookie es un pequeño archivo de texto que un sitio web almacena en su ordenador o dispositivo móvil cuando usted visita el sitio. Las cookies son ampliamente utilizadas para hacer que los sitios web funcionen, o funcionen de manera más eficiente, así como para proporcionar información a los propietarios del sitio.</p>
         <p class="mb-4">Las cookies permiten que un sitio web reconozca su dispositivo. Su propósito incluye permitir que el sitio recuerde sus preferencias durante un tiempo determinado y ayudar a reanudar su actividad donde la dejó la última vez que visitó el sitio web, entre otras funciones.</p>
 
-        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">2. ¿Cómo utilizamos las cookies?</h2>
-        <p class="mb-4">En SecureAI utilizamos cookies para distintas finalidades. Principalmente, utilizamos cookies para mejorar su experiencia de navegación, proporcionarle contenido y publicidad más relevantes, y analizar el tráfico de nuestro sitio web. A continuación, detallamos los tipos de cookies que utilizamos:</p>
+        <div class="cyber-card my-8">
+          <h2 class="text-2xl font-bold text-cyber-green mb-4">2. ¿Cómo utilizamos las cookies?</h2>
+          <p class="mb-4">En SecureAI utilizamos cookies para distintas finalidades. Principalmente, utilizamos cookies para mejorar su experiencia de navegación, proporcionarle contenido y publicidad más relevantes, y analizar el tráfico de nuestro sitio web. A continuación, detallamos los tipos de cookies que utilizamos:</p>
 
-        <h3 class="text-xl font-bold text-gray-800 mt-6 mb-3">2.1 Cookies técnicas</h3>
-        <p class="mb-4">Son aquellas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan como, por ejemplo, controlar el tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido, realizar la solicitud de inscripción o participación en un evento, utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de videos o sonido o compartir contenidos a través de redes sociales.</p>
+          <h3 class="text-xl font-bold text-cyber-blue mt-6 mb-3">2.1 Cookies técnicas</h3>
+          <p class="mb-4">Son aquellas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan como, por ejemplo, controlar el tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido, realizar la solicitud de inscripción o participación en un evento, utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de videos o sonido o compartir contenidos a través de redes sociales.</p>
 
-        <h3 class="text-xl font-bold text-gray-800 mt-6 mb-3">2.2 Cookies de personalización</h3>
-        <p class="mb-4">Son aquellas que permiten al usuario acceder al servicio con algunas características de carácter general predefinidas en función de una serie de criterios en el terminal del usuario como por ejemplo serían el idioma, el tipo de navegador a través del cual accede al servicio, la configuración regional desde donde accede al servicio, etc.</p>
+          <h3 class="text-xl font-bold text-cyber-blue mt-6 mb-3">2.2 Cookies de personalización</h3>
+          <p class="mb-4">Son aquellas que permiten al usuario acceder al servicio con algunas características de carácter general predefinidas en función de una serie de criterios en el terminal del usuario como por ejemplo serían el idioma, el tipo de navegador a través del cual accede al servicio, la configuración regional desde donde accede al servicio, etc.</p>
 
-        <h3 class="text-xl font-bold text-gray-800 mt-6 mb-3">2.3 Cookies de análisis</h3>
-        <p class="mb-4">Son aquellas que permiten al responsable de las mismas, el seguimiento y análisis del comportamiento de los usuarios de los sitios web a los que están vinculadas. La información recogida mediante este tipo de cookies se utiliza en la medición de la actividad de los sitios web, aplicación o plataforma y para la elaboración de perfiles de navegación de los usuarios de dichos sitios, aplicaciones y plataformas, con el fin de introducir mejoras en función del análisis de los datos de uso que hacen los usuarios del servicio.</p>
+          <h3 class="text-xl font-bold text-cyber-blue mt-6 mb-3">2.3 Cookies de análisis</h3>
+          <p class="mb-4">Son aquellas que permiten al responsable de las mismas, el seguimiento y análisis del comportamiento de los usuarios de los sitios web a los que están vinculadas. La información recogida mediante este tipo de cookies se utiliza en la medición de la actividad de los sitios web, aplicación o plataforma y para la elaboración de perfiles de navegación de los usuarios de dichos sitios, aplicaciones y plataformas, con el fin de introducir mejoras en función del análisis de los datos de uso que hacen los usuarios del servicio.</p>
+        </div>
 
-        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Cookies de terceros</h2>
+        <h2 class="text-2xl font-bold text-cyber-blue mt-8 mb-4 cyber-heading">3. Cookies de terceros</h2>
         <p class="mb-4">En algunas páginas de nuestro sitio web podemos utilizar componentes de terceros, como servicios de análisis web de Google Analytics, que instalan cookies en su dispositivo. Asegúrese de revisar las políticas de privacidad de estos terceros para entender cómo utilizan las cookies.</p>
 
-        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">4. Gestión de cookies</h2>
+        <h2 class="text-2xl font-bold text-cyber-blue mt-8 mb-4 cyber-heading">4. Gestión de cookies</h2>
         <p class="mb-4">Usted puede gestionar las cookies a través de la configuración de su navegador. A continuación, le proporcionamos enlaces a las instrucciones para gestionar las cookies en los navegadores más comunes:</p>
-        <ul class="list-disc pl-6 mb-6">
-          <li class="mb-2"><a href="https://support.google.com/chrome/answer/95647?hl=es" class="text-indigo-600 hover:text-indigo-800" target="_blank">Google Chrome</a></li>
-          <li class="mb-2"><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" class="text-indigo-600 hover:text-indigo-800" target="_blank">Mozilla Firefox</a></li>
-          <li class="mb-2"><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" class="text-indigo-600 hover:text-indigo-800" target="_blank">Safari</a></li>
-          <li class="mb-2"><a href="https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies" class="text-indigo-600 hover:text-indigo-800" target="_blank">Internet Explorer</a></li>
-          <li class="mb-2"><a href="https://support.microsoft.com/es-es/help/4468242/microsoft-edge-browsing-data-and-privacy" class="text-indigo-600 hover:text-indigo-800" target="_blank">Microsoft Edge</a></li>
+        <ul class="cyber-list pl-6 mb-6">
+          <li class="mb-2"><a href="https://support.google.com/chrome/answer/95647?hl=es" class="text-cyber-blue hover:text-cyber-green transition-colors" target="_blank">Google Chrome</a></li>
+          <li class="mb-2"><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias" class="text-cyber-blue hover:text-cyber-green transition-colors" target="_blank">Mozilla Firefox</a></li>
+          <li class="mb-2"><a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" class="text-cyber-blue hover:text-cyber-green transition-colors" target="_blank">Safari</a></li>
+          <li class="mb-2"><a href="https://support.microsoft.com/es-es/help/17442/windows-internet-explorer-delete-manage-cookies" class="text-cyber-blue hover:text-cyber-green transition-colors" target="_blank">Internet Explorer</a></li>
+          <li class="mb-2"><a href="https://support.microsoft.com/es-es/help/4468242/microsoft-edge-browsing-data-and-privacy" class="text-cyber-blue hover:text-cyber-green transition-colors" target="_blank">Microsoft Edge</a></li>
         </ul>
         <p class="mb-4">Tenga en cuenta que si desactiva las cookies, es posible que algunas funcionalidades de nuestro sitio web no estén disponibles y su experiencia de navegación puede verse afectada.</p>
 
-        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Cambios en la política de cookies</h2>
-        <p class="mb-4">Es posible que actualicemos nuestra Política de Cookies de vez en cuando para reflejar, por ejemplo, cambios en las cookies que utilizamos o por otros motivos operativos, legales o reglamentarios. Por lo tanto, le recomendamos que visite esta Política de Cookies regularmente para estar informado sobre nuestro uso de cookies y tecnologías relacionadas.</p>
-        <p class="mb-4">La fecha en la parte superior de esta Política de Cookies indica cuándo se actualizó por última vez.</p>
+        <div class="cyber-card-alt my-8">
+          <h2 class="text-2xl font-bold text-cyber-green mb-4">5. Cambios en la política de cookies</h2>
+          <p class="mb-4">Es posible que actualicemos nuestra Política de Cookies de vez en cuando para reflejar, por ejemplo, cambios en las cookies que utilizamos o por otros motivos operativos, legales o reglamentarios. Por lo tanto, le recomendamos que visite esta Política de Cookies regularmente para estar informado sobre nuestro uso de cookies y tecnologías relacionadas.</p>
+          <p class="mb-4">La fecha en la parte superior de esta Política de Cookies indica cuándo se actualizó por última vez.</p>
+        </div>
 
-        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Contacto</h2>
+        <h2 class="text-2xl font-bold text-cyber-blue mt-8 mb-4 cyber-heading">6. Contacto</h2>
         <p class="mb-4">Si tiene alguna pregunta sobre nuestra Política de Cookies, por favor contáctenos:</p>
-        <ul class="list-disc pl-6 mb-6">
-          <li class="mb-2">Por correo electrónico: info@secureai.com</li>
-          <li class="mb-2">Por teléfono: +34 900 123 456</li>
+        <ul class="cyber-list pl-6 mb-6">
+          <li class="mb-2">Por correo electrónico: <span class="text-cyber-blue">info@secureai.com</span></li>
+          <li class="mb-2">Por teléfono: <span class="text-cyber-blue">+34 900 123 456</span></li>
           <li class="mb-2">Por correo postal: Calle Seguridad Digital, 123, 28001, Madrid, España</li>
         </ul>
       </div>
     </div>
   </main>
   <Footer />
-</Layout> 
+</Layout>
+
+<style>
+  .cyber-prose {
+    color: var(--color-cyber-text);
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  
+  .cyber-heading {
+    position: relative;
+    display: inline-block;
+    text-shadow: 0 0 5px rgba(0, 180, 216, 0.5);
+  }
+  
+  .cyber-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, var(--color-cyber-blue), transparent);
+  }
+  
+  .cyber-glitch-small {
+    position: relative;
+    text-shadow: 0 0 10px var(--color-cyber-blue);
+  }
+  
+  .cyber-glitch-small::before {
+    content: 'Política de Cookies';
+    position: absolute;
+    left: -2px;
+    text-shadow: 2px 0 var(--color-cyber-green);
+    top: 0;
+    color: var(--color-cyber-blue);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: cyber-noise-small 3s infinite linear alternate-reverse;
+  }
+  
+  @keyframes cyber-noise-small {
+    0%, 3%, 5%, 42%, 44%, 100% {clip-rect: rect(0, 900px, 0, 0); opacity: 0;}
+    1%, 4%, 43% {clip-rect: rect(0, 900px, 0.3em, 0); opacity: 0.5;}
+  }
+  
+  .cyber-list {
+    list-style-type: none;
+    padding-left: 1.5rem;
+  }
+  
+  .cyber-list li {
+    position: relative;
+    padding-left: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .cyber-list li::before {
+    content: '>';
+    position: absolute;
+    left: -1rem;
+    color: var(--color-cyber-green);
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  .cyber-card {
+    background: rgba(0, 180, 216, 0.05);
+    border: 1px solid var(--color-cyber-blue);
+    border-radius: 0.375rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px rgba(0, 180, 216, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cyber-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-cyber-blue), var(--color-cyber-green));
+  }
+  
+  .cyber-card-alt {
+    background: rgba(123, 44, 191, 0.05);
+    border: 1px solid var(--color-cyber-purple);
+    border-radius: 0.375rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 15px rgba(123, 44, 191, 0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cyber-card-alt::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-cyber-purple), var(--color-cyber-blue));
+  }
+</style> 

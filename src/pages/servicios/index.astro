@@ -9,14 +9,16 @@ import ServiciosNav from '../../components/ServiciosNav.astro';
   <Navbar />
   <main class="pt-24">
     <!-- Hero de servicios -->
-    <div class="bg-gradient-to-r from-indigo-900 to-indigo-700 text-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+    <div class="cyber-gradient-bg relative overflow-hidden border-b border-cyber-blue/30">
+      <div class="cyber-grid absolute inset-0 opacity-10"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 relative z-10">
         <div class="text-center">
-          <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
+          <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl cyber-glitch" data-text="Nuestros Servicios">
             Nuestros Servicios
           </h1>
-          <p class="mt-6 max-w-3xl mx-auto text-xl text-indigo-100">
-            Soluciones avanzadas de ciberseguridad y automatización con inteligencia artificial
+          <div class="cyber-line mx-auto my-6"></div>
+          <p class="mt-6 max-w-3xl mx-auto text-xl text-cyber-text font-light">
+            Soluciones avanzadas de <span class="text-cyber-blue">ciberseguridad</span> y <span class="text-cyber-green">automatización</span> con inteligencia artificial
           </p>
         </div>
       </div>
@@ -28,19 +30,19 @@ import ServiciosNav from '../../components/ServiciosNav.astro';
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
       <div class="grid gap-12 md:grid-cols-1 lg:grid-cols-3">
         <!-- Servicio 1: Pentesting -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <div class="h-48 bg-gradient-to-r from-indigo-800 to-indigo-600 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="cyber-card group">
+          <div class="cyber-card-header bg-gradient-to-r from-cyber-dark-blue to-cyber-blue flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white group-hover:text-cyber-green transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
             </svg>
           </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-gray-900">Pentesting Profesional</h2>
-            <p class="mt-4 text-gray-600">
+            <h2 class="text-2xl font-bold text-cyber-blue font-orbitron">Pentesting Profesional</h2>
+            <p class="mt-4 text-cyber-text">
               Evaluaciones exhaustivas de seguridad para identificar vulnerabilidades en sistemas, aplicaciones web, redes y dispositivos móviles antes que los atacantes.
             </p>
             <div class="mt-6">
-              <a href="/servicios/pentesting" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+              <a href="/servicios/pentesting" class="cyber-button">
                 Ver detalles
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -51,19 +53,19 @@ import ServiciosNav from '../../components/ServiciosNav.astro';
         </div>
 
         <!-- Servicio 2: Automatización con IA -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <div class="h-48 bg-gradient-to-r from-indigo-800 to-indigo-600 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="cyber-card group">
+          <div class="cyber-card-header bg-gradient-to-r from-cyber-purple to-cyber-blue flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white group-hover:text-cyber-green transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
           </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-gray-900">Automatización con IA</h2>
-            <p class="mt-4 text-gray-600">
+            <h2 class="text-2xl font-bold text-cyber-blue font-orbitron">Automatización con IA</h2>
+            <p class="mt-4 text-cyber-text">
               Implementación de soluciones de automatización impulsadas por inteligencia artificial para optimizar procesos y mejorar la eficiencia operativa.
             </p>
             <div class="mt-6">
-              <a href="/servicios/automatizacion-ia" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+              <a href="/servicios/automatizacion-ia" class="cyber-button">
                 Ver detalles
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -74,19 +76,19 @@ import ServiciosNav from '../../components/ServiciosNav.astro';
         </div>
 
         <!-- Servicio 3: Consultoría en Ciberseguridad -->
-        <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-          <div class="h-48 bg-gradient-to-r from-indigo-800 to-indigo-600 flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="cyber-card group">
+          <div class="cyber-card-header bg-gradient-to-r from-cyber-blue to-cyber-green flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-white group-hover:text-cyber-blue transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
           <div class="p-6">
-            <h2 class="text-2xl font-bold text-gray-900">Consultoría en Ciberseguridad</h2>
-            <p class="mt-4 text-gray-600">
+            <h2 class="text-2xl font-bold text-cyber-blue font-orbitron">Consultoría en Ciberseguridad</h2>
+            <p class="mt-4 text-cyber-text">
               Asesoramiento especializado en ciberseguridad para ayudar a su organización a desarrollar estrategias sólidas de protección digital.
             </p>
             <div class="mt-6">
-              <a href="/servicios/consultoria" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+              <a href="/servicios/consultoria" class="cyber-button">
                 Ver detalles
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -98,12 +100,13 @@ import ServiciosNav from '../../components/ServiciosNav.astro';
       </div>
 
       <div class="mt-16 text-center">
-        <h2 class="text-3xl font-extrabold text-gray-900">¿No está seguro de qué servicio necesita?</h2>
-        <p class="mt-4 text-lg text-gray-600">
+        <h2 class="text-3xl font-extrabold text-cyber-blue font-orbitron cyber-glow">¿No está seguro de qué servicio necesita?</h2>
+        <div class="cyber-line mx-auto my-6"></div>
+        <p class="mt-4 text-lg text-cyber-text">
           Contáctenos para una consulta personalizada y le ayudaremos a determinar la mejor solución para sus necesidades específicas.
         </p>
         <div class="mt-8">
-          <a href="/contacto" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+          <a href="/contacto" class="cyber-button-large">
             Solicitar una consulta
           </a>
         </div>
@@ -111,4 +114,200 @@ import ServiciosNav from '../../components/ServiciosNav.astro';
     </div>
   </main>
   <Footer />
-</Layout> 
+</Layout>
+
+<style>
+  .cyber-gradient-bg {
+    background: linear-gradient(135deg, rgba(10,14,23,0.9) 0%, rgba(30,58,138,0.8) 100%);
+  }
+  
+  .cyber-grid {
+    background-image: 
+      linear-gradient(to right, rgba(0,180,216,0.1) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0,180,216,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+  
+  .cyber-line {
+    height: 2px;
+    width: 100px;
+    background: linear-gradient(90deg, transparent, var(--color-cyber-blue), transparent);
+  }
+  
+  .cyber-card {
+    background-color: rgba(10,14,23,0.8);
+    border: 1px solid rgba(0,180,216,0.3);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0,180,216,0.1);
+  }
+  
+  .cyber-card:hover {
+    border-color: var(--color-cyber-blue);
+    box-shadow: 0 0 20px rgba(0,180,216,0.3);
+    transform: translateY(-5px);
+  }
+  
+  .cyber-card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--color-cyber-blue), var(--color-cyber-green));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .cyber-card:hover:before {
+    transform: scaleX(1);
+  }
+  
+  .cyber-card-header {
+    height: 12rem;
+    transition: all 0.3s ease;
+  }
+  
+  .cyber-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    color: var(--color-cyber-text);
+    background-color: rgba(30,58,138,0.8);
+    border: 1px solid var(--color-cyber-blue);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .cyber-button:hover {
+    color: white;
+    border-color: var(--color-cyber-green);
+    box-shadow: 0 0 15px rgba(0,255,157,0.5);
+  }
+  
+  .cyber-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-cyber-blue), var(--color-cyber-green));
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .cyber-button:hover:before {
+    transform: scaleX(1);
+  }
+  
+  .cyber-button-large {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--color-cyber-text);
+    background-color: rgba(30,58,138,0.8);
+    border: 1px solid var(--color-cyber-blue);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .cyber-button-large:hover {
+    color: white;
+    border-color: var(--color-cyber-green);
+    box-shadow: 0 0 20px rgba(0,255,157,0.5);
+  }
+  
+  .cyber-button-large:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-cyber-blue), var(--color-cyber-green));
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .cyber-button-large:hover:before {
+    transform: scaleX(1);
+  }
+  
+  .cyber-glitch {
+    position: relative;
+    color: var(--color-cyber-text);
+    text-shadow: 0 0 10px var(--color-cyber-blue);
+  }
+  
+  .cyber-glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -1px 0 var(--color-cyber-green);
+    top: 0;
+    color: var(--color-cyber-text);
+    background: transparent;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: cyber-glitch-anim 3s infinite linear alternate-reverse;
+  }
+  
+  @keyframes cyber-glitch-anim {
+    0% {
+      clip: rect(0, 900px, 5px, 0);
+    }
+    20% {
+      clip: rect(0, 900px, 5px, 0);
+    }
+    21% {
+      clip: rect(0, 900px, 0, 0);
+    }
+    49% {
+      clip: rect(0, 900px, 0, 0);
+    }
+    50% {
+      clip: rect(0, 900px, 5px, 0);
+      transform: translateX(-2px);
+    }
+    60% {
+      clip: rect(0, 900px, 5px, 0);
+      transform: translateX(-2px);
+    }
+    61% {
+      clip: rect(0, 900px, 0, 0);
+      transform: translateX(0);
+    }
+    100% {
+      clip: rect(0, 900px, 0, 0);
+    }
+  }
+  
+  .cyber-glow {
+    text-shadow: 0 0 10px var(--color-cyber-blue), 0 0 20px var(--color-cyber-blue);
+  }
+  
+  .font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+  }
+</style> 

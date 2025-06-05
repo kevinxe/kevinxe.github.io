@@ -6,21 +6,72 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content="Servicios profesionales de Pentesting y Automatización con IA" />
-		<title>{Astro.props.title || "Servicios de Pentesting y Automatización con IA"}</title>
+		<title>{Astro.props.title || "SecureAI - Pentesting y Automatización con IA"}</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 	</head>
-	<body class="bg-gray-50 text-gray-900 min-h-screen">
-		<slot />
+	<body class="bg-cyber-dark text-cyber-text min-h-screen circuit-pattern">
+		<div class="matrix-bg min-h-screen">
+			<slot />
+		</div>
 	</body>
 </html>
 
 <style is:global>
 	@import '../styles/global.css';
 	
+	:root {
+		--color-cyber-dark: #0a0e17;
+		--color-cyber-blue: #00b4d8;
+		--color-cyber-green: #00ff9d;
+		--color-cyber-red: #ff0844;
+		--color-cyber-purple: #7b2cbf;
+		--color-cyber-dark-blue: #1e3a8a;
+		--color-cyber-text: #e2e8f0;
+	}
+	
 	html {
 		font-family: 'Inter', sans-serif;
 		scroll-behavior: smooth;
+		background-color: var(--color-cyber-dark);
+		color: var(--color-cyber-text);
+	}
+	
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'Orbitron', sans-serif;
+	}
+	
+	code, pre {
+		font-family: 'JetBrains Mono', monospace;
+	}
+	
+	/* Tailwind custom classes */
+	.bg-cyber-dark {
+		background-color: var(--color-cyber-dark);
+	}
+	.text-cyber-text {
+		color: var(--color-cyber-text);
+	}
+	.text-cyber-blue {
+		color: var(--color-cyber-blue);
+	}
+	.text-cyber-green {
+		color: var(--color-cyber-green);
+	}
+	.text-cyber-red {
+		color: var(--color-cyber-red);
+	}
+	.bg-cyber-blue {
+		background-color: var(--color-cyber-blue);
+	}
+	.bg-cyber-green {
+		background-color: var(--color-cyber-green);
+	}
+	.border-cyber-blue {
+		border-color: var(--color-cyber-blue);
+	}
+	.border-cyber-green {
+		border-color: var(--color-cyber-green);
 	}
 </style>
