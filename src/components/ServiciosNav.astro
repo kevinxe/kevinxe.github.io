@@ -1,0 +1,29 @@
+---
+// ServiciosNav.astro
+const { servicioActivo } = Astro.props;
+---
+
+<div class="bg-gray-100 py-4 border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-8">
+      <a 
+        href="/servicios/pentesting" 
+        class={`px-3 py-2 text-sm font-medium rounded-md ${servicioActivo === 'pentesting' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-200'}`}
+      >
+        Pentesting Profesional
+      </a>
+      <a 
+        href="/servicios/automatizacion-ia" 
+        class={`px-3 py-2 text-sm font-medium rounded-md ${servicioActivo === 'automatizacion-ia' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-200'}`}
+      >
+        Automatización con IA
+      </a>
+      <a 
+        href="/servicios/consultoria" 
+        class={`px-3 py-2 text-sm font-medium rounded-md ${servicioActivo === 'consultoria' ? 'bg-indigo-600 text-white' : 'text-gray-700 hover:bg-gray-200'}`}
+      >
+        Consultoría en Ciberseguridad
+      </a>
+    </nav>
+  </div>
+</div> 

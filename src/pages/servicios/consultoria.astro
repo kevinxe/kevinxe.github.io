@@ -1,0 +1,102 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import ServiciosNav from '../../components/ServiciosNav.astro';
+---
+
+<Layout title="Consultoría en Ciberseguridad - SecureAI">
+  <Navbar />
+  <main class="pt-24">
+    <!-- Hero de servicio -->
+    <div class="bg-gradient-to-r from-indigo-900 to-indigo-700 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+        <div class="text-center">
+          <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
+            Consultoría en Ciberseguridad
+          </h1>
+          <p class="mt-6 max-w-3xl mx-auto text-xl text-indigo-100">
+            Asesoramiento especializado para ayudar a su organización a desarrollar estrategias sólidas de protección digital.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <ServiciosNav servicioActivo="consultoria" />
+
+    <!-- Descripción detallada -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="prose prose-indigo prose-lg mx-auto">
+        <h2>Asesoramiento Estratégico en Ciberseguridad</h2>
+        <p>
+          En SecureAI, ofrecemos servicios de consultoría en ciberseguridad diseñados para ayudar a las organizaciones a navegar por el complejo panorama de amenazas digitales actuales. Nuestro equipo de consultores expertos trabaja estrechamente con usted para comprender sus necesidades específicas y desarrollar estrategias personalizadas que protejan sus activos digitales más valiosos.
+        </p>
+        
+        <p>
+          Con años de experiencia en la industria y un profundo conocimiento de las últimas tendencias y amenazas en ciberseguridad, nuestros consultores proporcionan orientación práctica y accionable para fortalecer su postura de seguridad y mitigar riesgos.
+        </p>
+        
+        <div class="my-12 bg-gray-50 p-6 rounded-lg border border-gray-200">
+          <h3 class="text-xl font-bold text-indigo-700">¿Por qué elegir nuestra consultoría?</h3>
+          <ul class="mt-4">
+            <li><strong>Enfoque personalizado:</strong> Desarrollamos estrategias adaptadas específicamente a sus necesidades y desafíos únicos</li>
+            <li><strong>Experiencia multidisciplinar:</strong> Nuestro equipo combina conocimientos en ciberseguridad, cumplimiento normativo, gestión de riesgos y tecnologías emergentes</li>
+            <li><strong>Orientación práctica:</strong> Proporcionamos recomendaciones concretas y accionables, no solo informes teóricos</li>
+            <li><strong>Visión holística:</strong> Abordamos la seguridad desde múltiples perspectivas: tecnológica, humana, organizativa y de procesos</li>
+            <li><strong>Transferencia de conocimiento:</strong> Capacitamos a su equipo para mejorar su autonomía en la gestión de la seguridad</li>
+          </ul>
+        </div>
+
+        <h2>Nuestros Servicios de Consultoría</h2>
+        
+        <h3 class="text-xl font-bold mt-8">1. Evaluación de Riesgos y Análisis de Brechas</h3>
+        <p>
+          Realizamos una evaluación exhaustiva de su entorno de seguridad actual para identificar vulnerabilidades, evaluar riesgos y determinar brechas en relación con las mejores prácticas de la industria y los requisitos normativos aplicables.
+        </p>
+        <ul>
+          <li>Identificación y clasificación de activos de información críticos</li>
+          <li>Evaluación de amenazas y vulnerabilidades</li>
+          <li>Análisis de impacto en el negocio</li>
+          <li>Evaluación de controles de seguridad existentes</li>
+          <li>Identificación de brechas y recomendaciones de mejora</li>
+        </ul>
+
+        <h3 class="text-xl font-bold mt-8">2. Desarrollo de Estrategia y Arquitectura de Seguridad</h3>
+        <p>
+          Diseñamos estrategias y arquitecturas de seguridad integrales que se alinean con sus objetivos de negocio, requisitos de cumplimiento y tolerancia al riesgo, proporcionando un marco claro para la implementación de controles de seguridad efectivos.
+        </p>
+        <ul>
+          <li>Definición de objetivos y principios de seguridad</li>
+          <li>Diseño de arquitectura de seguridad empresarial</li>
+          <li>Desarrollo de hoja de ruta de seguridad</li>
+          <li>Selección de tecnologías y soluciones de seguridad</li>
+          <li>Definición de métricas y KPIs de seguridad</li>
+        </ul>
+
+        <h3 class="text-xl font-bold mt-8">3. Desarrollo de Políticas y Procedimientos</h3>
+        <p>
+          Creamos y revisamos políticas, estándares y procedimientos de seguridad que establecen un marco claro para la gestión de la seguridad de la información en su organización, alineados con las mejores prácticas de la industria y requisitos regulatorios.
+        </p>
+        <ul>
+          <li>Política general de seguridad de la información</li>
+          <li>Políticas específicas (control de acceso, gestión de incidentes, etc.)</li>
+          <li>Estándares técnicos y de configuración</li>
+          <li>Procedimientos operativos de seguridad</li>
+          <li>Guías y manuales para usuarios finales</li>
+        </ul>
+
+        <h2 class="mt-12">Solicite una Consulta Inicial</h2>
+        <p>
+          Nuestro equipo de consultores expertos está listo para ayudarle a fortalecer la postura de seguridad de su organización. Contáctenos hoy para programar una consulta inicial gratuita y descubrir cómo podemos ayudarle a proteger sus activos digitales más valiosos.
+        </p>
+
+        <div class="mt-8">
+          <a href="/contacto" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700">
+            Solicitar consulta inicial
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout> 
