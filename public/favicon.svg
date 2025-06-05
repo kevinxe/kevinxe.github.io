@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
+  <rect width="128" height="128" rx="16" fill="#4F46E5"/>
+  <path d="M64 30C45.22 30 30 45.22 30 64C30 82.78 45.22 98 64 98C82.78 98 98 82.78 98 64C98 45.22 82.78 30 64 30ZM64 42C76.15 42 86 51.85 86 64C86 76.15 76.15 86 64 86C51.85 86 42 76.15 42 64C42 51.85 51.85 42 64 42Z" fill="white"/>
+  <path d="M64 48C55.16 48 48 55.16 48 64C48 72.84 55.16 80 64 80V64L76 52C73.05 49.38 68.72 48 64 48Z" fill="white"/>
+  <path d="M80 64C80 59.28 78.62 54.95 76 52L64 64H80Z" fill="white"/>
+  <style>
+    @media (prefers-color-scheme: dark) {
+      rect { fill: #6366F1; }
+    }
+  </style>
+</svg>
