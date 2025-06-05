@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import ContactoComponent from '../components/Contacto.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Contacto - SecureAI">
+  <Navbar />
+  <main class="pt-24">
+    <!-- Hero de contacto -->
+    <div class="bg-gradient-to-r from-indigo-900 to-indigo-700 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+        <div class="text-center">
+          <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">
+            Contacto
+          </h1>
+          <p class="mt-6 max-w-3xl mx-auto text-xl text-indigo-100">
+            Estamos aquí para ayudarte con tus necesidades de ciberseguridad y automatización
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Componente de contacto -->
+    <ContactoComponent />
+  </main>
+  <Footer />
+</Layout> 
