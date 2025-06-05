@@ -1,0 +1,78 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Política de Privacidad - SecureAI">
+  <Navbar />
+  <main class="pt-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h1 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-8">
+        Política de Privacidad
+      </h1>
+
+      <div class="prose prose-indigo max-w-none">
+        <p class="text-lg text-gray-500 mb-6">Última actualización: {new Date().toLocaleDateString('es-ES', {year: 'numeric', month: 'long', day: 'numeric'})}</p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Información que recopilamos</h2>
+        <p class="mb-4">En SecureAI, recopilamos los siguientes tipos de información:</p>
+        <ul class="list-disc pl-6 mb-6">
+          <li class="mb-2"><strong>Información personal:</strong> Nombre, dirección de correo electrónico, número de teléfono, empresa y otra información que usted nos proporcione voluntariamente a través de nuestros formularios de contacto.</li>
+          <li class="mb-2"><strong>Información de uso:</strong> Datos sobre cómo interactúa con nuestro sitio web, incluyendo las páginas que visita, el tiempo que pasa en ellas y otros datos de análisis.</li>
+          <li class="mb-2"><strong>Información técnica:</strong> Dirección IP, tipo de navegador, proveedor de servicios de Internet, páginas de referencia/salida, sistema operativo, fecha/hora y datos de clickstream.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Cómo utilizamos su información</h2>
+        <p class="mb-4">Utilizamos la información que recopilamos para:</p>
+        <ul class="list-disc pl-6 mb-6">
+          <li class="mb-2">Proporcionar, operar y mantener nuestros servicios.</li>
+          <li class="mb-2">Mejorar, personalizar y expandir nuestros servicios.</li>
+          <li class="mb-2">Entender y analizar cómo utiliza nuestros servicios.</li>
+          <li class="mb-2">Desarrollar nuevos productos, servicios, características y funcionalidades.</li>
+          <li class="mb-2">Comunicarnos con usted, ya sea directamente o a través de uno de nuestros socios, para proporcionarle actualizaciones y otra información relacionada con el servicio.</li>
+          <li class="mb-2">Enviarle correos electrónicos.</li>
+          <li class="mb-2">Encontrar y prevenir fraudes.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Cookies y tecnologías de seguimiento</h2>
+        <p class="mb-4">Utilizamos cookies y tecnologías de seguimiento similares para rastrear la actividad en nuestro sitio web y almacenar cierta información. Las cookies son archivos con una pequeña cantidad de datos que pueden incluir un identificador único anónimo.</p>
+        <p class="mb-4">Puede instruir a su navegador para que rechace todas las cookies o para que le avise cuando se envía una cookie. Sin embargo, si no acepta cookies, es posible que no pueda utilizar algunas partes de nuestro servicio.</p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">4. Transferencia de datos</h2>
+        <p class="mb-4">Su información, incluidos los datos personales, puede transferirse y mantenerse en ordenadores ubicados fuera de su estado, provincia, país u otra jurisdicción gubernamental donde las leyes de protección de datos pueden diferir de las de su jurisdicción.</p>
+        <p class="mb-4">Si se encuentra fuera de España y elige proporcionarnos información, tenga en cuenta que transferimos los datos, incluidos los datos personales, a España y los procesamos allí.</p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Divulgación de datos</h2>
+        <p class="mb-4">Podemos divulgar su información personal en las siguientes situaciones:</p>
+        <ul class="list-disc pl-6 mb-6">
+          <li class="mb-2"><strong>Requisitos legales:</strong> Para cumplir con una obligación legal.</li>
+          <li class="mb-2"><strong>Protección de derechos:</strong> Para proteger y defender los derechos o la propiedad de SecureAI.</li>
+          <li class="mb-2"><strong>Seguridad pública:</strong> Para prevenir o investigar posibles irregularidades en relación con el Servicio.</li>
+          <li class="mb-2"><strong>Protección personal:</strong> Para proteger la seguridad personal de los usuarios del Servicio o del público.</li>
+          <li class="mb-2"><strong>Protección legal:</strong> Para protegernos contra la responsabilidad legal.</li>
+        </ul>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Seguridad de los datos</h2>
+        <p class="mb-4">La seguridad de sus datos es importante para nosotros, pero recuerde que ningún método de transmisión por Internet o método de almacenamiento electrónico es 100% seguro. Aunque nos esforzamos por utilizar medios comercialmente aceptables para proteger sus datos personales, no podemos garantizar su seguridad absoluta.</p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">7. Sus derechos de protección de datos</h2>
+        <p class="mb-4">Si reside en el Espacio Económico Europeo (EEE), tiene ciertos derechos de protección de datos. SecureAI tiene como objetivo tomar medidas razonables para permitirle corregir, modificar, eliminar o limitar el uso de sus datos personales.</p>
+        <p class="mb-4">Si desea ser informado sobre qué datos personales tenemos sobre usted y si desea que se eliminen de nuestros sistemas, póngase en contacto con nosotros.</p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Cambios a esta política de privacidad</h2>
+        <p class="mb-4">Podemos actualizar nuestra Política de Privacidad de vez en cuando. Le notificaremos cualquier cambio publicando la nueva Política de Privacidad en esta página.</p>
+        <p class="mb-4">Se le aconseja que revise esta Política de Privacidad periódicamente para cualquier cambio. Los cambios a esta Política de Privacidad son efectivos cuando se publican en esta página.</p>
+
+        <h2 class="text-2xl font-bold text-gray-900 mt-8 mb-4">9. Contacto</h2>
+        <p class="mb-4">Si tiene alguna pregunta sobre esta Política de Privacidad, puede contactarnos:</p>
+        <ul class="list-disc pl-6 mb-6">
+          <li class="mb-2">Por correo electrónico: info@secureai.com</li>
+          <li class="mb-2">Por teléfono: +34 900 123 456</li>
+          <li class="mb-2">Por correo postal: Calle Seguridad Digital, 123, 28001, Madrid, España</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout> 
