@@ -1,5 +1,7 @@
 ---
 // Navbar.astro
+const currentPath = Astro.url.pathname;
+const isHomePage = currentPath === "/" || currentPath === "";
 ---
 
 <header class="fixed w-full z-10 backdrop-blur-md bg-cyber-dark/80 border-b border-cyber-blue/30">
@@ -17,11 +19,11 @@
           Servicios
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyber-blue group-hover:w-full transition-all duration-300"></span>
         </a>
-        <a href="#beneficios" class="text-cyber-text hover:text-cyber-blue px-3 py-2 text-sm font-medium transition-all duration-300 relative group">
+        <a href={isHomePage ? "#beneficios" : "/#beneficios"} class="text-cyber-text hover:text-cyber-blue px-3 py-2 text-sm font-medium transition-all duration-300 relative group">
           Beneficios
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyber-blue group-hover:w-full transition-all duration-300"></span>
         </a>
-        <a href="#tecnologias" class="text-cyber-text hover:text-cyber-blue px-3 py-2 text-sm font-medium transition-all duration-300 relative group">
+        <a href={isHomePage ? "#tecnologias" : "/#tecnologias"} class="text-cyber-text hover:text-cyber-blue px-3 py-2 text-sm font-medium transition-all duration-300 relative group">
           Tecnologías
           <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyber-blue group-hover:w-full transition-all duration-300"></span>
         </a>
@@ -43,8 +45,8 @@
   <div id="mobile-menu" class="hidden md:hidden bg-cyber-dark/95 border-t border-cyber-blue/30">
     <div class="px-2 pt-2 pb-3 space-y-1">
       <a href="/servicios" class="block px-3 py-2 text-base font-medium text-cyber-text hover:text-cyber-blue hover:bg-cyber-dark/50 rounded-md transition-all duration-300">Servicios</a>
-      <a href="#beneficios" class="block px-3 py-2 text-base font-medium text-cyber-text hover:text-cyber-blue hover:bg-cyber-dark/50 rounded-md transition-all duration-300">Beneficios</a>
-      <a href="#tecnologias" class="block px-3 py-2 text-base font-medium text-cyber-text hover:text-cyber-blue hover:bg-cyber-dark/50 rounded-md transition-all duration-300">Tecnologías</a>
+      <a href={isHomePage ? "#beneficios" : "/#beneficios"} class="block px-3 py-2 text-base font-medium text-cyber-text hover:text-cyber-blue hover:bg-cyber-dark/50 rounded-md transition-all duration-300">Beneficios</a>
+      <a href={isHomePage ? "#tecnologias" : "/#tecnologias"} class="block px-3 py-2 text-base font-medium text-cyber-text hover:text-cyber-blue hover:bg-cyber-dark/50 rounded-md transition-all duration-300">Tecnologías</a>
       <a href="/contacto" class="block px-3 py-2 text-base font-medium text-cyber-green hover:text-cyber-blue hover:bg-cyber-dark/50 rounded-md transition-all duration-300">Contacto</a>
     </div>
   </div>
@@ -76,5 +78,23 @@
     } else {
       header?.classList.remove('shadow-lg', 'shadow-cyber-blue/10');
     }
+  });
+
+  // Handle hash navigation on different pages
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', (e) => {
+      const href = anchor.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        const targetId = href.substring(1);
+        const targetElement = document.getElementById(targetId);
+        
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
   });
 </script> 

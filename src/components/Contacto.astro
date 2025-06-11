@@ -27,19 +27,38 @@
         <!-- Formulario de contacto -->
         <div class="cyber-card p-8 relative overflow-hidden">
           <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-cyber-blue via-cyber-green to-cyber-blue"></div>
-          <form action="#" method="POST" class="space-y-6">
+          
+          <!-- Mensaje de éxito - inicialmente oculto -->
+          <div id="form-success" class="hidden p-6 mb-8 rounded-md bg-cyber-green/30 border-2 border-cyber-green shadow-lg shadow-cyber-green/20 animate-pulse">
+            <div class="flex">
+              <div class="flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyber-green" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="ml-3">
+                <p class="text-base font-medium text-cyber-green">¡Mensaje enviado correctamente! Nos pondremos en contacto contigo pronto.</p>
+              </div>
+            </div>
+          </div>
+          
+          <form id="contact-form" action="https://formspree.io/f/xvgragyy" method="POST" class="space-y-6">
+            <input type="hidden" name="_next" value="https://kevinxe.github.io/contacto?success=true" />
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde el sitio web" />
+            <input type="hidden" name="_autoresponse" value="Gracias por tu mensaje. Lo hemos recibido y nos pondremos en contacto contigo pronto." />
+            
             <div>
-              <label for="nombre" class="block text-sm font-medium text-cyber-blue">Nombre completo</label>
+              <label for="name" class="block text-sm font-medium text-cyber-blue">Nombre completo</label>
               <div class="mt-1">
-                <input type="text" name="nombre" id="nombre" autocomplete="name" required 
+                <input type="text" name="name" id="name" autocomplete="name" required 
                   class="py-3 px-4 block w-full bg-cyber-dark/50 border border-cyber-blue/30 text-cyber-text rounded-md focus:ring-cyber-blue focus:border-cyber-blue placeholder-cyber-text/50">
               </div>
             </div>
 
             <div>
-              <label for="empresa" class="block text-sm font-medium text-cyber-blue">Empresa</label>
+              <label for="company" class="block text-sm font-medium text-cyber-blue">Empresa</label>
               <div class="mt-1">
-                <input type="text" name="empresa" id="empresa" autocomplete="organization" 
+                <input type="text" name="company" id="company" autocomplete="organization" 
                   class="py-3 px-4 block w-full bg-cyber-dark/50 border border-cyber-blue/30 text-cyber-text rounded-md focus:ring-cyber-blue focus:border-cyber-blue placeholder-cyber-text/50">
               </div>
             </div>
@@ -53,17 +72,17 @@
             </div>
 
             <div>
-              <label for="telefono" class="block text-sm font-medium text-cyber-blue">Teléfono</label>
+              <label for="phone" class="block text-sm font-medium text-cyber-blue">Teléfono</label>
               <div class="mt-1">
-                <input type="tel" name="telefono" id="telefono" autocomplete="tel" 
+                <input type="tel" name="phone" id="phone" autocomplete="tel" 
                   class="py-3 px-4 block w-full bg-cyber-dark/50 border border-cyber-blue/30 text-cyber-text rounded-md focus:ring-cyber-blue focus:border-cyber-blue placeholder-cyber-text/50">
               </div>
             </div>
 
             <div>
-              <label for="servicio" class="block text-sm font-medium text-cyber-blue">Servicio de interés</label>
+              <label for="service" class="block text-sm font-medium text-cyber-blue">Servicio de interés</label>
               <div class="mt-1">
-                <select id="servicio" name="servicio" 
+                <select id="service" name="service" 
                   class="py-3 px-4 block w-full bg-cyber-dark/50 border border-cyber-blue/30 text-cyber-text rounded-md focus:ring-cyber-blue focus:border-cyber-blue">
                   <option value="" class="bg-cyber-dark">Selecciona un servicio</option>
                   <option value="pentesting" class="bg-cyber-dark">Pentesting Profesional</option>
@@ -75,19 +94,22 @@
             </div>
 
             <div>
-              <label for="mensaje" class="block text-sm font-medium text-cyber-blue">Mensaje</label>
+              <label for="message" class="block text-sm font-medium text-cyber-blue">Mensaje</label>
               <div class="mt-1">
-                <textarea id="mensaje" name="mensaje" rows="4" 
+                <textarea id="message" name="message" rows="4" required
                   class="py-3 px-4 block w-full bg-cyber-dark/50 border border-cyber-blue/30 text-cyber-text rounded-md focus:ring-cyber-blue focus:border-cyber-blue placeholder-cyber-text/50"></textarea>
               </div>
             </div>
 
+            <!-- Campo oculto para evitar spam -->
+            <input type="text" name="_gotcha" style="display:none" />
+
             <div>
-              <button type="submit" class="gradient-btn w-full inline-flex items-center justify-center px-6 py-3 text-base font-medium">
+              <button type="submit" id="submit-button" class="gradient-btn w-full inline-flex items-center justify-center px-6 py-3 text-base font-medium">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
                   <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
                 </svg>
-                Enviar Mensaje
+                <span id="submit-text">Enviar Mensaje</span>
               </button>
             </div>
           </form>
@@ -185,3 +207,176 @@
     <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-cyber-blue/50 to-transparent"></div>
   </div>
 </section> 
+
+<script>
+  // Script para manejar el formulario y mostrar mensaje de éxito
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form') as HTMLFormElement;
+    const formSuccess = document.getElementById('form-success');
+    const submitButton = document.getElementById('submit-button') as HTMLButtonElement;
+    const submitText = document.getElementById('submit-text');
+    const formContainer = form ? form.parentElement : null;
+    
+    // Función para limpiar manualmente todos los campos del formulario
+    function limpiarFormulario() {
+      if (!form) return;
+      
+      try {
+        // Limpiar directamente cada campo por ID
+        const nameInput = document.getElementById('name') as HTMLInputElement;
+        const companyInput = document.getElementById('company') as HTMLInputElement;
+        const emailInput = document.getElementById('email') as HTMLInputElement;
+        const phoneInput = document.getElementById('phone') as HTMLInputElement;
+        const serviceSelect = document.getElementById('service') as HTMLSelectElement;
+        const messageTextarea = document.getElementById('message') as HTMLTextAreaElement;
+        
+        if (nameInput) nameInput.value = '';
+        if (companyInput) companyInput.value = '';
+        if (emailInput) emailInput.value = '';
+        if (phoneInput) phoneInput.value = '';
+        if (messageTextarea) messageTextarea.value = '';
+        if (serviceSelect) serviceSelect.selectedIndex = 0;
+        
+        // También limpiar por selector como respaldo
+        const textInputs = form.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"]');
+        textInputs.forEach((element) => {
+          const input = element as HTMLInputElement;
+          input.value = '';
+        });
+        
+        // Limpiar textareas
+        const textareas = form.querySelectorAll('textarea');
+        textareas.forEach((element) => {
+          const textarea = element as HTMLTextAreaElement;
+          textarea.value = '';
+        });
+        
+        // Restablecer selects al valor por defecto
+        const selects = form.querySelectorAll('select');
+        selects.forEach((element) => {
+          const select = element as HTMLSelectElement;
+          select.selectedIndex = 0;
+        });
+        
+        console.log("Formulario limpiado manualmente");
+      } catch (e) {
+        console.error("Error al limpiar el formulario:", e);
+        
+        // Solución drástica: recrear el formulario
+        if (formContainer && form) {
+          try {
+            // Clonar el formulario pero vacío
+            const nuevoFormulario = form.cloneNode(true) as HTMLFormElement;
+            
+            // Limpiar todos los campos del clon
+            const inputsNuevos = nuevoFormulario.querySelectorAll('input:not([type="hidden"]), textarea, select');
+            inputsNuevos.forEach((el) => {
+              if (el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement) {
+                el.value = '';
+              } else if (el instanceof HTMLSelectElement) {
+                el.selectedIndex = 0;
+              }
+            });
+            
+            // Reemplazar el formulario
+            formContainer.replaceChild(nuevoFormulario, form);
+            
+            console.log("Formulario recreado como solución alternativa");
+            
+            // Reestablecer listener para el nuevo formulario
+            const nuevoBoton = nuevoFormulario.querySelector('#submit-button') as HTMLButtonElement;
+            const nuevoTexto = nuevoFormulario.querySelector('#submit-text');
+            
+            if (nuevoBoton && nuevoTexto) {
+              nuevoFormulario.addEventListener('submit', function() {
+                localStorage.setItem('formSubmitted', 'true');
+                nuevoBoton.disabled = true;
+                nuevoTexto.textContent = 'Enviando...';
+              });
+            }
+          } catch (cloneError) {
+            console.error("Error al recrear el formulario:", cloneError);
+          }
+        }
+      }
+    }
+    
+    if (form && formSuccess && submitButton && submitText) {
+      // Observar cambios en el mensaje de éxito
+      // Cuando se vuelve visible, limpiar el formulario
+      const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+          if (mutation.type === 'attributes' && 
+              mutation.attributeName === 'class' && 
+              !formSuccess.classList.contains('hidden')) {
+            console.log("Observer detectó mensaje de éxito visible, limpiando formulario");
+            setTimeout(() => {
+              form.reset();
+              limpiarFormulario();
+            }, 100);
+          }
+        });
+      });
+      
+      observer.observe(formSuccess, { attributes: true });
+      
+      // Si hay un parámetro 'success' en la URL, mostrar mensaje de éxito
+      const urlParams = new URLSearchParams(window.location.search);
+      const successParam = urlParams.get('success');
+      
+      console.log("URL params:", window.location.search);
+      console.log("Success param:", successParam);
+      
+      // Verificar el parámetro success en la URL o en localStorage
+      if (successParam === 'true' || localStorage.getItem('formSubmitted') === 'true') {
+        console.log("Mostrando mensaje de éxito");
+        
+        // Intentar limpiar el formulario inmediatamente
+        form.reset();
+        limpiarFormulario();
+        
+        // Y también después de un breve retraso para asegurar que funciona
+        setTimeout(() => {
+          form.reset();
+          limpiarFormulario();
+        }, 500);
+        
+        // Mostrar mensaje de éxito
+        formSuccess.classList.remove('hidden');
+        
+        // Hacer que deje de parpadear después de unos segundos
+        setTimeout(() => {
+          formSuccess.classList.remove('animate-pulse');
+        }, 3000);
+        
+        // Limpiar el localStorage después de mostrar el mensaje
+        if (localStorage.getItem('formSubmitted') === 'true') {
+          localStorage.removeItem('formSubmitted');
+        }
+        
+        // Scroll al mensaje de éxito
+        setTimeout(() => {
+          formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 500);
+      } else {
+        console.log("No se detectó éxito en la URL ni en localStorage");
+      }
+      
+      // Antes de enviar el formulario
+      form.addEventListener('submit', function() {
+        // Guardar en localStorage que el formulario se envió
+        localStorage.setItem('formSubmitted', 'true');
+        // Deshabilitar botón y cambiar texto
+        submitButton.disabled = true;
+        submitText.textContent = 'Enviando...';
+      });
+    } else {
+      console.log("Algún elemento no fue encontrado:", {
+        form: !!form,
+        formSuccess: !!formSuccess,
+        submitButton: !!submitButton,
+        submitText: !!submitText
+      });
+    }
+  });
+</script> 
